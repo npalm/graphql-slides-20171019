@@ -1,0 +1,35 @@
+
+.reveal p.source {
+  font-size: 62px;
+  font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
+}
+
+.reveal p.source-code-pro {
+  font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
+}
+
+.hljs {
+  background: black;
+}
+
+.reveal strong {
+  color: #ffd310;
+  font-style: normal
+}
+
+.qrcode img {
+    display: inline !important;
+    height: 20%;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reveal section.section_video_custom {
+  margin-left: -100px
+}
+
+.reveal video {
+	max-width: 120%;
+	max-height: 120%;
+}

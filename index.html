@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>GraphQL – The next generation API language</title>
+
+		<meta name="description" content="GraphQL – The next generation API language">
+		<meta name="author" content="Niek Palm">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<!-- Code syntax highlighting -->
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+  	<link rel="stylesheet" href="css/slides.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+figure {
+display: inline-block;
+vertical-align: top
+}
+</style>
+	</head>
+	<body>
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section>
+
+					<img data-src="images/graphql-logo.png" width="80%" height="80%">
+					<h3>The next generation API language</h3>
+							<p><small>
+
+						<img data-src="images/geecon.png" width="70%" height="70%">
+						<div><div>
+						<br> October 19th 2017, created by: <a
+						href="mailto:dev.npalm@gmail.com">Niek Palm</a>
+					</small></p>
+				</section>
+
+				<section data-markdown="markdown/intro.md"
+					data-transition="slide"
+					data-background-transition="zoom"
+					data-separator="^\n!SLIDE"
+					data-separator-vertical="^\n!SUB"
+					data-separator-notes="^\n!NOTE"
+		  		data-charset="iso-8859-15">
+				</section>
+
+				<section
+					data-markdown="markdown/rest.md"
+					data-transition="slide"
+					data-background-transition="zoom"
+					data-separator="^\n!SLIDE"
+					data-separator-vertical="^\n!SUB"
+					data-separator-notes="^\n!NOTE"
+					data-charset="iso-8859-15">
+				</section>
+
+				<section
+					data-background-image="images/future.jpg"
+					data-transition="slide"
+					data-background-transition="zoom"
+					data-separator="^\n!SLIDE"
+					data-separator-vertical="^\n!SUB"
+					data-separator-notes="^\n!NOTE"
+					data-charset="iso-8859-15">
+				</section>
+
+				<section data-markdown="markdown/graphql.md"
+					data-transition="slide"
+					data-background-transition="zoom"
+					data-separator="^\n!SLIDE"
+					data-separator-vertical="^\n!SUB"
+					data-separator-notes="^\n!NOTE"
+					data-charset="iso-8859-15">
+				</section>
+
+				<section data-markdown="markdown/last.md"
+					data-transition="slide"
+					data-background-transition="zoom"
+					data-separator="^\n!SLIDE"
+					data-separator-vertical="^\n!SUB"
+					data-separator-notes="^\n!NOTE"
+					data-charset="iso-8859-15">
+				</section>
+
+			</div>
+		</div>
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+
+				controls: false,
+				progress: false,
+				history: true,
+				center: true,
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/marked.js' },
+					{ src: 'reveal/plugin/markdown/markdown.js' },
+					{ src: 'reveal/plugin/notes/notes.js', async: true },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal/plugin/math/math.js', async: true }
+				]
+			});
+
+			// Slide every five seconds
+			Reveal.configure({
+					//autoSlide: 10000,
+					//loop: true
+			});
+		</script>
+		<script src="qrcodejs/qrcode.js"></script>
+		<script>
+
+			Reveal.addEventListener( 'ready', function( event ) {
+			    /* Grab all links and iterate over them */
+			    var sources = document.getElementsByTagName('a');
+			    n = sources.length;
+			    for (var i = 0; i < n; i++) {
+			        var source = sources[i];
+			        var href = source.href;
+
+			        /* If the link has no href attribute, skip it */
+			        if (href) {
+			            var target_id = "qrcode-" + source.id ;
+			            var target = document.getElementById(target_id);
+			            if (target) {
+			                var qr = new QRCode(target, {
+													colorDark : "#000000",
+													colorLight : "#ffffff",
+													correctLevel : QRCode.CorrectLevel.H
+			                });
+			                qr.makeCode(href);
+			            }
+			        }
+			    }
+
+
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "description": "slides",
+  "scripts": {
+    "build-css": "node-sass ./css/source/   --output ./css/",
+    "start": "static -a 0.0.0.0"
+  },
+  "keywords": [
+    "Reveal",
+    "GraphQL",
+    "Nextbuild"
+  ],
+  "author": "Niek Palm",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^3.11.2",
+    "node-static": "^0.7.9"
+  },
+  "dependencies": {
+    "global": "^4.3.2",
+    "static": "^2.0.0"
+  }
+}
