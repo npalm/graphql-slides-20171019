@@ -17,6 +17,9 @@
   font-style: normal
 }
 
+.reveal pre {
+  box-shadow: none
+}
 .qrcode img {
     display: inline !important;
     height: 20%;

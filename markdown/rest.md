@@ -1,9 +1,7 @@
 ## REST API
 
-<div class="fragment">
 Resource: `/talks`
-</div>
-<pre class="fragment"><code>
+```
 [
   {
     "title" : "GraphQL - The Next API Language",
@@ -20,9 +18,7 @@ Resource: `/talks`
     }
   }
 ]
-
-</pre></code>
-
+```
 
 !SUB
 ## REST API

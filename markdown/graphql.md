@@ -20,9 +20,9 @@
 
 !SUB
 ## Who is using GraphQL
-lsJust a few...
 
-![users](images/users.png)
+
+<img data-src="images/users.png" height="60%" width="60%">
 
 http://graphql.org/users/
 
@@ -118,7 +118,7 @@ In REST you pas a single set of argument as query parameters in GraphQL **every 
 
 </code></pre>
 
-!SUB§
+!SUB
 ### GraphQL Queries : Fragments
 GraphQL includes reusable units called **fragments**. Fragments let you construct sets of fields, and then include them in queries.
 
@@ -185,14 +185,6 @@ subscription TalkMessage {
 
 
 !SUB
-### Introspection and Types
-- Schema is strongly typed
-- The model can be introspected
-- Client-side validation
-- Powerfull client tools
-
-
-!SUB
 ## Schema
 A GraphQL schema is in essence the definition of a type system
 
@@ -223,12 +215,13 @@ type Person {
 !SUB
 ![](images/sample-java.png)
 <div class="fragment">
-![](images/sample-java-graphiql.png)
+<img data-src="images/sample-java-graphiql.png" height="70%" width="70%">
+[https://github.com/npalm/graphql-java-demo](https://github.com/npalm/graphql-java-demo)
 </div>
 
 !SUB
-### Java Spring Boot example
-- Spring Boot and GraphQL Sprinb Boot Starter <!-- .element: class="fragment" -->
+### Java example
+- Spring Boot and GraphQL Spring Boot Starter <!-- .element: class="fragment" -->
 - GraphQL (schema frist) via GraphQL tools <!-- .element: class="fragment" -->
 - GraphQL interface provided <!-- .element: class="fragment" -->
 - Build via Gradle (and Docker) <!-- .element: class="fragment" -->
@@ -236,5 +229,6 @@ type Person {
 !SUB
 ![](images/sample-javascript.png)
 <div class="fragment">
-![](images/sample-javascript-graphiql.png)
+<img data-src="images/sample-javascript-graphiql.png" height="70%" width="70%">
+[https://github.com/npalm/graphql-js-demo](https://github.com/npalm/graphql-js-demo)
 </div>
