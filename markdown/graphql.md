@@ -229,7 +229,7 @@ type Person {
 !SUB
 ### Java example
 - Spring Boot and GraphQL Spring Boot Starter <!-- .element: class="fragment" -->
-- GraphQL (schema frist) via GraphQL tools <!-- .element: class="fragment" -->
+- GraphQL (schema first) via GraphQL tools <!-- .element: class="fragment" -->
 - GraphQL interface provided <!-- .element: class="fragment" -->
 - Build via Gradle (and Docker) <!-- .element: class="fragment" -->
 
