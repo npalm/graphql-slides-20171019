@@ -73,20 +73,27 @@ http://graphql.org/users/
 !SUB
 ### Demo internals
 
-<pre class="fragment"><code>
-Request: HTTP POST
+<div class="fragment" align="left">
+<small>HTTP Request (POST)</small>
+<pre><code>
 {
 	"query": "query { allTalks { title } }"
 }
 </pre></code>
+</div>
 
-<pre class="fragment"><code>
-Response:
+<div class="fragment" align="left">
+<small>HTTP Response</small>
+<pre ><code>
 {
   "data": { ... }
 }
 </pre></code>
 
+<div align="center">
+[https://github.com/npalm/graphiql](https://github.com/npalm/graphiql)
+</div>
+</div>
 
 !SUB
 ### GraphQL Queries : Arguments
